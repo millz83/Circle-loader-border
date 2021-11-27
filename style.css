@@ -1,0 +1,35 @@
+body {
+	background-color: #202628;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+}
+.loader-circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 8px solid;
+	border-color: #3bf8ff;
+	border-right-color: rgb(151, 30, 30);
+	position: relative;
+	animation: loader-circle-71-spin 1s infinite linear;
+	display: inline-block;
+}
+.loader-circle:after {
+	background-color: #c34ab9;
+	content: "";
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+@keyframes loader-circle-71-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
